@@ -22,7 +22,21 @@ modif.addEventListener("click",function () {
     let ecrit= document.createElement("input");
     ecrit.setAttribute('type', 'text');
     ecrit.value= inputValue;
-    li.appendChild(ecrit);
+
+ const save = document.createElement("button");
+save.textContent = "save!";
+li.appendChild(ecrit);
+li.appendChild(save);
+save.addEventListener("click",function (q) {
+    const fin = ecrit.value;
+    li.textContent= "";
+    li.appendChild(document.createTextNode(fin));
+
+    li.appendChild(deletebutton);
+    li.appendChild(modif);
+  
+
+})
 })
 
     ul.appendChild(li);
@@ -31,15 +45,3 @@ modif.addEventListener("click",function () {
 
 
 });     
-
-// Ajouter le bouton Modifier
-        //Créer le bouton modifier
-        //Appliquer le texte "Modifier"
-        //addEventListener > au click > fonction >
-            //Céer un nouvel input
-            //Ajouter le type 'text' à l'input
-            //Ajouter en valeur de l'input le contenu textuel du premier élément enfant (firstChild) du li
-            //Créer un bouton avec le texte Sauvegarder
-            //addEventListener > au click > fonction >
-                //Remplacer le texte du premier élément enfant(firstChild) du li par la valeur du nouvel input
-                //Supprimer le nouvel input et le bouton sauvegarder

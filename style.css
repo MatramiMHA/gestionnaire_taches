@@ -1,3 +1,8 @@
+body{
+    background:linear-gradient(rgba(128, 128, 128, 0.228),rgba(128, 0, 128, 0.374)) ;
+    background-size: 300% 300%;
+    
+}
 form{
     display:flex;
     flex-direction: column;
@@ -5,6 +10,7 @@ form{
 }
 h1{
     text-align: center;
+    
 }
 .form{
     display:flex;
@@ -13,22 +19,34 @@ h1{
 }
 li {
     background-color:rgba(14, 151, 169, 0.046);  
-    border-radius: 10px; 
-    padding : 10px 0;
+    border-radius: px; 
+    padding : 10px ;
     margin: 10px; 
+   
+}
+li ul{
+    text-decoration: none;
 }
 form input {
     width: 714px;
-    height:200px;
+    height:25px;
+    padding: 10px;
     margin: 25px;
 }
-#butto{
+button{
     width:100px;
     height:35px;
-    padding:5px 0;
+    padding:2px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
     color: blueviolet;
-    border:0;
     border-radius: 1px;
 
 
+}
+button:hover{
+    color:rgb(252, 252, 252);
+    background-color: rgba(137, 43, 226, 0.425);
+    transition: all 0.3s ease 0s;
 }
